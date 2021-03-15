@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainForm">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="18" width="788" height="186"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="a9df" binding="buttonsPanel" layout-manager="GridBagLayout">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="9597c" class="javax.swing.JButton" binding="expandButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <text value="Expand"/>
+            </properties>
+          </component>
+          <component id="c0d35" class="javax.swing.JButton" binding="collapseButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <text value="Collapse"/>
+            </properties>
+          </component>
+          <hspacer id="6f3f3">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="313f">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+          </hspacer>
+        </children>
+      </grid>
+      <grid id="80e0" binding="textPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <name value="textPanel"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="2ed0f" class="javax.swing.JLabel" binding="surname">
+            <constraints/>
+            <properties>
+              <name value="surname"/>
+              <text value="Фамилия"/>
+            </properties>
+          </component>
+          <component id="ab2d1" class="javax.swing.JTextField" binding="surnameField">
+            <constraints/>
+            <properties>
+              <preferredSize width="150" height="30"/>
+            </properties>
+          </component>
+          <component id="4ede" class="javax.swing.JLabel" binding="name">
+            <constraints/>
+            <properties>
+              <name value="name"/>
+              <text value="Имя"/>
+            </properties>
+          </component>
+          <component id="357cf" class="javax.swing.JTextField" binding="nameField">
+            <constraints/>
+            <properties>
+              <preferredSize width="130" height="30"/>
+            </properties>
+          </component>
+          <component id="d310d" class="javax.swing.JLabel" binding="secondName">
+            <constraints/>
+            <properties>
+              <name value="secondName"/>
+              <text value="Отчество"/>
+            </properties>
+          </component>
+          <component id="2269d" class="javax.swing.JTextField" binding="secondNameField">
+            <constraints/>
+            <properties>
+              <preferredSize width="150" height="30"/>
+            </properties>
+          </component>
+          <component id="d1296" class="javax.swing.JLabel" binding="fullname">
+            <constraints/>
+            <properties>
+              <preferredSize width="600" height="16"/>
+              <text value="Фамилия Имя Отчество"/>
+            </properties>
+          </component>
+          <component id="19456" class="javax.swing.JTextField" binding="fullNameField">
+            <constraints/>
+            <properties>
+              <preferredSize width="600" height="30"/>
+            </properties>
+          </component>
+          <component id="a4da8" class="javax.swing.JLabel" binding="errorMessage">
+            <constraints/>
+            <properties>
+              <preferredSize width="500" height="16"/>
+              <text value="!!! ОШИБКА ВВОДА !!!"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

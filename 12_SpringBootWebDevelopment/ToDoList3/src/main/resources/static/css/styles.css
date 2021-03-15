@@ -1,0 +1,48 @@
+* {
+    font-family: Arial;
+}
+
+#add-task-form {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: #88888878;
+}
+
+#add-task-form form {
+    background-color: white;
+    border: 1px solid #333;
+    width: 300px;
+    padding: 20px;
+}
+
+#add-task-form h2 {
+    margin-top: 0;
+}
+
+#add-task-form label {
+    display: block;
+}
+
+#add-task-form form > * {
+    margin-bottom: 5px;
+}
+
+a.task-del {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+a.task-link {
+    width: 300px;
+}
+
+h4 {
+    margin-bottom: 0;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="WARN">
+    <appenders>
+        <!--Console name="stdOut" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{dd-MM-yyyy HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console> -->
+
+        <!--Logger name="fileOut" level="debug" additivity="false">
+            <appender-ref ref="console-log" level="debug"/>
+        </Logger-->
+
+        <File name="log-errors" fileName="logs/input_errors.log" append="false">
+            <PatternLayout pattern="%d{dd-MM-yyyy HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <File name="log-search" fileName="logs/search.log" append="false">
+            <PatternLayout pattern="%d{dd-MM-yyyy HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <File name="log-exceptions" fileName="logs/exceptions.log" append="false">
+            <PatternLayout pattern="%d{dd-MM-yyyy HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+    </appenders>
+
+    <loggers>
+        <Logger name="log-search" level="info" additivity="false">
+            <appender-ref ref="log-search" level="info"/>>
+        </Logger>
+        <Logger name="log-errors" level="info" additivity="false">
+            <appender-ref ref="log-errors" level="info"/>
+        </Logger>
+        <Logger name="log-exceptions" level="warn" additivity="false">
+            <appender-ref ref="log-exceptions" level="warn"/>
+        </Logger>
+
+        <!--root level="debug">
+            <AppenderRef ref="fileOut1" level="debug"/>
+            <AppenderRef ref="fileOut2" level="info"/>
+            <AppenderRef ref="stdOut" level="info"/>
+        </root-->
+    </loggers>
+</configuration>
